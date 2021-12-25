@@ -1,13 +1,5 @@
 #!/usr/bin/env bash
 
-while true; do
-    read -p "This will create a New Home Assistant OS VM. Proceed(y/n)?" yn
-    case $yn in
-        [Yy]* ) break;;
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
 set -o errexit
 set -o errtrace
 set -o nounset
